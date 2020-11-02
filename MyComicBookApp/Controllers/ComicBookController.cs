@@ -29,6 +29,12 @@ namespace MyComicBookApp.Controllers
             return View(comicBook);
         }
 
+        public ActionResult Index() {
+            var comicBooks =  _repo.GetComicBooks();
+            return View(comicBooks);
+        }
+
+
 
     }
 }
